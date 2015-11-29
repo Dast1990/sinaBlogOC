@@ -12,6 +12,16 @@
 		C2B4003E1C09CCED00EE0DEE /* YLSinaBlogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4003D1C09CCED00EE0DEE /* YLSinaBlogUITests.m */; };
 		C2B4004F1C09CEEF00EE0DEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4004D1C09CEEF00EE0DEE /* AppDelegate.m */; };
 		C2B400501C09CEEF00EE0DEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4004E1C09CEEF00EE0DEE /* main.m */; };
+		C2B400531C0A8F3200EE0DEE /* YLMainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400521C0A8F3200EE0DEE /* YLMainTabbarController.m */; };
+		C2B400561C0A972600EE0DEE /* YLHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400551C0A972600EE0DEE /* YLHomeTableViewController.m */; };
+		C2B400591C0A973300EE0DEE /* YLMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400581C0A973300EE0DEE /* YLMessageTableViewController.m */; };
+		C2B4005C1C0A973B00EE0DEE /* YLDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4005B1C0A973B00EE0DEE /* YLDiscoverTableViewController.m */; };
+		C2B4005F1C0A974500EE0DEE /* YLProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4005E1C0A974500EE0DEE /* YLProfileTableViewController.m */; };
+		C2B400641C0AA54500EE0DEE /* YLTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400621C0AA54500EE0DEE /* YLTest1ViewController.m */; };
+		C2B400651C0AA54500EE0DEE /* YLTest1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B400631C0AA54500EE0DEE /* YLTest1ViewController.xib */; };
+		C2B400681C0AB52E00EE0DEE /* YLNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400671C0AB52E00EE0DEE /* YLNavigationViewController.m */; };
+		C2B4006C1C0AB57400EE0DEE /* YLTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4006A1C0AB57400EE0DEE /* YLTest2ViewController.m */; };
+		C2B4006D1C0AB57400EE0DEE /* YLTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4006B1C0AB57400EE0DEE /* YLTest2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,25 @@
 		C2B4004C1C09CEEF00EE0DEE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2B4004D1C09CEEF00EE0DEE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2B4004E1C09CEEF00EE0DEE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2B400511C0A8F3200EE0DEE /* YLMainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMainTabbarController.h; sourceTree = "<group>"; };
+		C2B400521C0A8F3200EE0DEE /* YLMainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMainTabbarController.m; sourceTree = "<group>"; };
+		C2B400541C0A972600EE0DEE /* YLHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHomeTableViewController.h; sourceTree = "<group>"; };
+		C2B400551C0A972600EE0DEE /* YLHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHomeTableViewController.m; sourceTree = "<group>"; };
+		C2B400571C0A973300EE0DEE /* YLMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMessageTableViewController.h; sourceTree = "<group>"; };
+		C2B400581C0A973300EE0DEE /* YLMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMessageTableViewController.m; sourceTree = "<group>"; };
+		C2B4005A1C0A973B00EE0DEE /* YLDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDiscoverTableViewController.h; sourceTree = "<group>"; };
+		C2B4005B1C0A973B00EE0DEE /* YLDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDiscoverTableViewController.m; sourceTree = "<group>"; };
+		C2B4005D1C0A974500EE0DEE /* YLProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProfileTableViewController.h; sourceTree = "<group>"; };
+		C2B4005E1C0A974500EE0DEE /* YLProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProfileTableViewController.m; sourceTree = "<group>"; };
+		C2B400601C0A9E6D00EE0DEE /* YLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPrefixHeader.pch; sourceTree = "<group>"; };
+		C2B400611C0AA54500EE0DEE /* YLTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTest1ViewController.h; sourceTree = "<group>"; };
+		C2B400621C0AA54500EE0DEE /* YLTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTest1ViewController.m; sourceTree = "<group>"; };
+		C2B400631C0AA54500EE0DEE /* YLTest1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLTest1ViewController.xib; sourceTree = "<group>"; };
+		C2B400661C0AB52E00EE0DEE /* YLNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNavigationViewController.h; sourceTree = "<group>"; };
+		C2B400671C0AB52E00EE0DEE /* YLNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNavigationViewController.m; sourceTree = "<group>"; };
+		C2B400691C0AB57400EE0DEE /* YLTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTest2ViewController.h; sourceTree = "<group>"; };
+		C2B4006A1C0AB57400EE0DEE /* YLTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTest2ViewController.m; sourceTree = "<group>"; };
+		C2B4006B1C0AB57400EE0DEE /* YLTest2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLTest2ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				C2B400291C09CCED00EE0DEE /* Info.plist */,
+				C2B400601C0A9E6D00EE0DEE /* YLPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,6 +162,24 @@
 			children = (
 				C2B4004C1C09CEEF00EE0DEE /* AppDelegate.h */,
 				C2B4004D1C09CEEF00EE0DEE /* AppDelegate.m */,
+				C2B400511C0A8F3200EE0DEE /* YLMainTabbarController.h */,
+				C2B400521C0A8F3200EE0DEE /* YLMainTabbarController.m */,
+				C2B400661C0AB52E00EE0DEE /* YLNavigationViewController.h */,
+				C2B400671C0AB52E00EE0DEE /* YLNavigationViewController.m */,
+				C2B400541C0A972600EE0DEE /* YLHomeTableViewController.h */,
+				C2B400551C0A972600EE0DEE /* YLHomeTableViewController.m */,
+				C2B400571C0A973300EE0DEE /* YLMessageTableViewController.h */,
+				C2B400581C0A973300EE0DEE /* YLMessageTableViewController.m */,
+				C2B4005A1C0A973B00EE0DEE /* YLDiscoverTableViewController.h */,
+				C2B4005B1C0A973B00EE0DEE /* YLDiscoverTableViewController.m */,
+				C2B4005D1C0A974500EE0DEE /* YLProfileTableViewController.h */,
+				C2B4005E1C0A974500EE0DEE /* YLProfileTableViewController.m */,
+				C2B400611C0AA54500EE0DEE /* YLTest1ViewController.h */,
+				C2B400621C0AA54500EE0DEE /* YLTest1ViewController.m */,
+				C2B400631C0AA54500EE0DEE /* YLTest1ViewController.xib */,
+				C2B400691C0AB57400EE0DEE /* YLTest2ViewController.h */,
+				C2B4006A1C0AB57400EE0DEE /* YLTest2ViewController.m */,
+				C2B4006B1C0AB57400EE0DEE /* YLTest2ViewController.xib */,
 				C2B4004E1C09CEEF00EE0DEE /* main.m */,
 			);
 			path = classes;
@@ -245,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B400251C09CCED00EE0DEE /* Assets.xcassets in Resources */,
+				C2B400651C0AA54500EE0DEE /* YLTest1ViewController.xib in Resources */,
+				C2B4006D1C0AB57400EE0DEE /* YLTest2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B4006C1C0AB57400EE0DEE /* YLTest2ViewController.m in Sources */,
+				C2B4005F1C0A974500EE0DEE /* YLProfileTableViewController.m in Sources */,
 				C2B400501C09CEEF00EE0DEE /* main.m in Sources */,
 				C2B4004F1C09CEEF00EE0DEE /* AppDelegate.m in Sources */,
+				C2B400531C0A8F3200EE0DEE /* YLMainTabbarController.m in Sources */,
+				C2B4005C1C0A973B00EE0DEE /* YLDiscoverTableViewController.m in Sources */,
+				C2B400591C0A973300EE0DEE /* YLMessageTableViewController.m in Sources */,
+				C2B400681C0AB52E00EE0DEE /* YLNavigationViewController.m in Sources */,
+				C2B400561C0A972600EE0DEE /* YLHomeTableViewController.m in Sources */,
+				C2B400641C0AA54500EE0DEE /* YLTest1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLSinaBlog/YLPrefixHeader.pch";
 				INFOPLIST_FILE = YLSinaBlog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -404,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLSinaBlog/YLPrefixHeader.pch";
 				INFOPLIST_FILE = YLSinaBlog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,6 +539,7 @@
 				C2B400441C09CCED00EE0DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2B400451C09CCED00EE0DEE /* Build configuration list for PBXNativeTarget "YLSinaBlogTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +548,7 @@
 				C2B400471C09CCED00EE0DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2B400481C09CCED00EE0DEE /* Build configuration list for PBXNativeTarget "YLSinaBlogUITests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +557,7 @@
 				C2B4004A1C09CCED00EE0DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
