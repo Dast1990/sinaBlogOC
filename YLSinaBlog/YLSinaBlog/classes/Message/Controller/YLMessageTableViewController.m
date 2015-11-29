@@ -16,7 +16,7 @@
 @implementation YLMessageTableViewController
 
 - (void)viewDidLoad {
-     NSLog(@"%s",__func__);
+     YLLOG(@"%s",__func__);
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

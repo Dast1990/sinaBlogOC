@@ -21,4 +21,11 @@
 
 #endif
 
+#ifdef DEBUG
+#define YLLOG(...) NSLog(__VA_ARGS__)
+#else
+#define YLLOG(...)
+#endif
+
+
 #endif /* YLPrefixHeader_pch */
