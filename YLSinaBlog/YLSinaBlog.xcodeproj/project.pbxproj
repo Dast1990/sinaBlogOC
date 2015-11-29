@@ -10,7 +10,7 @@
 		C2B400251C09CCED00EE0DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B400241C09CCED00EE0DEE /* Assets.xcassets */; };
 		C2B400331C09CCED00EE0DEE /* YLSinaBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400321C09CCED00EE0DEE /* YLSinaBlogTests.m */; };
 		C2B4003E1C09CCED00EE0DEE /* YLSinaBlogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4003D1C09CCED00EE0DEE /* YLSinaBlogUITests.m */; };
-		C2B4006F1C0AD27900EE0DEE /* YLMind.txt in Sources */ = {isa = PBXBuildFile; fileRef = C2B4006E1C0AD27900EE0DEE /* YLMind.txt */; };
+		C2B4006F1C0AD27900EE0DEE /* YLMind.c in Sources */ = {isa = PBXBuildFile; fileRef = C2B4006E1C0AD27900EE0DEE /* YLMind.c */; };
 		C2B400A61C0AFDBB00EE0DEE /* UIView+YLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400791C0AFDBB00EE0DEE /* UIView+YLExtension.m */; };
 		C2B400A71C0AFDBB00EE0DEE /* YLDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4007D1C0AFDBB00EE0DEE /* YLDiscoverTableViewController.m */; };
 		C2B400A81C0AFDBB00EE0DEE /* YLHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400831C0AFDBB00EE0DEE /* YLHomeTableViewController.m */; };
@@ -54,7 +54,7 @@
 		C2B4003D1C09CCED00EE0DEE /* YLSinaBlogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSinaBlogUITests.m; sourceTree = "<group>"; };
 		C2B4003F1C09CCED00EE0DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2B400601C0A9E6D00EE0DEE /* YLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPrefixHeader.pch; sourceTree = "<group>"; };
-		C2B4006E1C0AD27900EE0DEE /* YLMind.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YLMind.txt; sourceTree = "<group>"; };
+		C2B4006E1C0AD27900EE0DEE /* YLMind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = YLMind.c; sourceTree = "<group>"; };
 		C2B400781C0AFDBB00EE0DEE /* UIView+YLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YLExtension.h"; sourceTree = "<group>"; };
 		C2B400791C0AFDBB00EE0DEE /* UIView+YLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLExtension.m"; sourceTree = "<group>"; };
 		C2B4007C1C0AFDBB00EE0DEE /* YLDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDiscoverTableViewController.h; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		C2B400171C09CCED00EE0DEE /* YLSinaBlog */ = {
 			isa = PBXGroup;
 			children = (
-				C2B4006E1C0AD27900EE0DEE /* YLMind.txt */,
+				C2B4006E1C0AD27900EE0DEE /* YLMind.c */,
 				C2B400761C0AFDBB00EE0DEE /* classes */,
 				C2B400181C09CCED00EE0DEE /* Supporting Files */,
 			);
@@ -523,7 +523,7 @@
 			files = (
 				C2B400AF1C0AFDBB00EE0DEE /* YLTest2ViewController.m in Sources */,
 				C2B400A71C0AFDBB00EE0DEE /* YLDiscoverTableViewController.m in Sources */,
-				C2B4006F1C0AD27900EE0DEE /* YLMind.txt in Sources */,
+				C2B4006F1C0AD27900EE0DEE /* YLMind.c in Sources */,
 				C2B400A61C0AFDBB00EE0DEE /* UIView+YLExtension.m in Sources */,
 				C2B400AA1C0AFDBB00EE0DEE /* YLNavigationViewController.m in Sources */,
 				C2B400A91C0AFDBB00EE0DEE /* YLMainTabbarController.m in Sources */,

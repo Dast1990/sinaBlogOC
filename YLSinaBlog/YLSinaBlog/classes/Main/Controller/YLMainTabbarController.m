@@ -48,7 +48,9 @@
     //    文字非系统渲染，不是设置self.tabBarItem
     [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]} forState:(UIControlStateSelected)];
     YLNavigationViewController *nav = [[YLNavigationViewController alloc] initWithRootViewController:childVC];
-    childVC.view.backgroundColor = YLRandomColor;
+    
+    //  创建随机色时会调用对用控制器的viewDidLoad方法，导致一下子就创建了 4 个view，这不合理，因为用户很可能就用一个home主页，不点其他页面，内存没必要提前去加载这些视图，即：没必要提前创建未显示的view。所以，不要创建随机色。
+    //    childVC.view.backgroundColor = YLRandomColor;
     [self addChildViewController:nav];
 }
 

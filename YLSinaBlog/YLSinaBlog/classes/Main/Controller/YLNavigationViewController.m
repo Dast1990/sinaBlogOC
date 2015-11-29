@@ -4,7 +4,6 @@
 //
 //  Created by LongMa on 15/11/29.
 //  Copyright © 2015年 LongMa. All rights reserved.
-//    自定义导航控制器，为了自定义返回和回到首页按钮，以及拦截push方法，隐藏tabbar
 
 #import "YLNavigationViewController.h"
 
@@ -35,7 +34,7 @@
         
         [backBtn addTarget:self action:@selector(backBtnDidClick) forControlEvents:(UIControlEventTouchUpInside)];
         
-        viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"回到主页" style:(UIBarButtonItemStyleDone) target:self action:@selector(jumpToHomePage)];
+        
     }
     //    拦截了push方法而没有调用父类push方法，会导致tabBarcontroller的四个子控制器没法push出来！
     //    注意：必须放在hidesBottomBarWhenPushed代码后面（if条件改为 > 0），因为先push的话，已经把tabbar展示出来了！

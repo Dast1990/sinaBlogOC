@@ -16,6 +16,7 @@
 @implementation YLMessageTableViewController
 
 - (void)viewDidLoad {
+     NSLog(@"%s",__func__);
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -36,7 +37,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 20;
 }
 
 
