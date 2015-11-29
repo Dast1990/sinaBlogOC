@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YLDiscoverTableViewController : UITableViewController
+@interface YLDiscoverTableViewController : UIViewController
 
 @end

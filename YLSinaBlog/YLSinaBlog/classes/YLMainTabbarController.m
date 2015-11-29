@@ -47,7 +47,7 @@
     
     //    文字非系统渲染，不是设置self.tabBarItem
     [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]} forState:(UIControlStateSelected)];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childVC];
+    YLNavigationViewController *nav = [[YLNavigationViewController alloc] initWithRootViewController:childVC];
     childVC.view.backgroundColor = YLRandomColor;
     [self addChildViewController:nav];
 }

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YLProfileTableViewController : UITableViewController
+@interface YLProfileTableViewController : UIViewController
 
 @end
