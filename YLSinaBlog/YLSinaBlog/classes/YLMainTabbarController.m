@@ -11,6 +11,7 @@
 #import "YLMessageTableViewController.h"
 #import "YLDiscoverTableViewController.h"
 #import "YLProfileTableViewController.h"
+#import "YLNavigationViewController.h"
 
 @interface YLMainTabbarController ()
 
@@ -47,18 +48,8 @@
     //    文字非系统渲染，不是设置self.tabBarItem
     [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]} forState:(UIControlStateSelected)];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childVC];
-    
     childVC.view.backgroundColor = YLRandomColor;
     [self addChildViewController:nav];
-    
-    
-    //   按钮不显示原因(见天色！)：1.没设置大小  2.被覆盖（通过查看运行时的3维视图，可以排除这种）
-    UIButton *backBtn = [[UIButton alloc] init];
-    //    坐标无效，因为赋值时leftBarButtonItem已经确定了按钮的位置
-    backBtn.frame = CGRectMake(1000, 100, 30, 30);
-    [backBtn setBackgroundImage:[UIImage imageNamed:@"compose_emoticonbutton_background"] forState:(UIControlStateNormal)];
-    [backBtn setBackgroundImage:[UIImage imageNamed:@"compose_emoticonbutton_background_highlighted"] forState:(UIControlStateHighlighted)];
-    childVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
 }
 
 

@@ -1,0 +1,10 @@
+//
+//  YLMind.c
+//  YLSinaBlog
+//
+//  Created by LongMa on 15/11/29.
+//  Copyright © 2015年 LongMa. All rights reserved.
+//
+V1.在tabBarC基础上显示了4个子控制器的界面。设置了pch文件，测试用的xib。设置了子控制器的leftBarButtonItem属性，待完善自定义导航控制器。
+V2.写UIView分类，方直接.size,.x 等快速代码
+3.自定义导航控制器，拦截push方法，隐藏tabbar

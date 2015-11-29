@@ -22,6 +22,8 @@
 		C2B400681C0AB52E00EE0DEE /* YLNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400671C0AB52E00EE0DEE /* YLNavigationViewController.m */; };
 		C2B4006C1C0AB57400EE0DEE /* YLTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4006A1C0AB57400EE0DEE /* YLTest2ViewController.m */; };
 		C2B4006D1C0AB57400EE0DEE /* YLTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B4006B1C0AB57400EE0DEE /* YLTest2ViewController.xib */; };
+		C2B4006F1C0AD27900EE0DEE /* YLMind.txt in Sources */ = {isa = PBXBuildFile; fileRef = C2B4006E1C0AD27900EE0DEE /* YLMind.txt */; };
+		C2B400751C0ADBF000EE0DEE /* UIView+YLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400741C0ADBF000EE0DEE /* UIView+YLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,9 @@
 		C2B400691C0AB57400EE0DEE /* YLTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTest2ViewController.h; sourceTree = "<group>"; };
 		C2B4006A1C0AB57400EE0DEE /* YLTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTest2ViewController.m; sourceTree = "<group>"; };
 		C2B4006B1C0AB57400EE0DEE /* YLTest2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLTest2ViewController.xib; sourceTree = "<group>"; };
+		C2B4006E1C0AD27900EE0DEE /* YLMind.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YLMind.txt; sourceTree = "<group>"; };
+		C2B400731C0ADBF000EE0DEE /* UIView+YLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YLExtension.h"; sourceTree = "<group>"; };
+		C2B400741C0ADBF000EE0DEE /* UIView+YLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,7 @@
 		C2B400171C09CCED00EE0DEE /* YLSinaBlog */ = {
 			isa = PBXGroup;
 			children = (
+				C2B4006E1C0AD27900EE0DEE /* YLMind.txt */,
 				C2B4004B1C09CEEF00EE0DEE /* classes */,
 				C2B400241C09CCED00EE0DEE /* Assets.xcassets */,
 				C2B400181C09CCED00EE0DEE /* Supporting Files */,
@@ -160,6 +166,8 @@
 		C2B4004B1C09CEEF00EE0DEE /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C2B400721C0ADBDC00EE0DEE /* Catogories */,
+				C2B400701C0ADB4400EE0DEE /* Extensions */,
 				C2B4004C1C09CEEF00EE0DEE /* AppDelegate.h */,
 				C2B4004D1C09CEEF00EE0DEE /* AppDelegate.m */,
 				C2B400511C0A8F3200EE0DEE /* YLMainTabbarController.h */,
@@ -183,6 +191,22 @@
 				C2B4004E1C09CEEF00EE0DEE /* main.m */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		C2B400701C0ADB4400EE0DEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2B400721C0ADBDC00EE0DEE /* Catogories */ = {
+			isa = PBXGroup;
+			children = (
+				C2B400731C0ADBF000EE0DEE /* UIView+YLExtension.h */,
+				C2B400741C0ADBF000EE0DEE /* UIView+YLExtension.m */,
+			);
+			path = Catogories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,8 +349,10 @@
 				C2B4004F1C09CEEF00EE0DEE /* AppDelegate.m in Sources */,
 				C2B400531C0A8F3200EE0DEE /* YLMainTabbarController.m in Sources */,
 				C2B4005C1C0A973B00EE0DEE /* YLDiscoverTableViewController.m in Sources */,
+				C2B4006F1C0AD27900EE0DEE /* YLMind.txt in Sources */,
 				C2B400591C0A973300EE0DEE /* YLMessageTableViewController.m in Sources */,
 				C2B400681C0AB52E00EE0DEE /* YLNavigationViewController.m in Sources */,
+				C2B400751C0ADBF000EE0DEE /* UIView+YLExtension.m in Sources */,
 				C2B400561C0A972600EE0DEE /* YLHomeTableViewController.m in Sources */,
 				C2B400641C0AA54500EE0DEE /* YLTest1ViewController.m in Sources */,
 			);
