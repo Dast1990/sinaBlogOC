@@ -18,6 +18,7 @@
     #define YLRandomColor YLColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
     #import "UIView+YLExtension.h"
+    #import "UIBarButtonItem+Extension.h"
 
 #endif
 

@@ -24,6 +24,7 @@
 		C2B400B01C0AFDBB00EE0DEE /* YLTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B400971C0AFDBB00EE0DEE /* YLTest2ViewController.xib */; };
 		C2B400B11C0AFDBB00EE0DEE /* YLMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4009C1C0AFDBB00EE0DEE /* YLMessageTableViewController.m */; };
 		C2B400B21C0AFDBB00EE0DEE /* YLProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400A31C0AFDBB00EE0DEE /* YLProfileTableViewController.m */; };
+		C2EBFC611C0BDF5F002BF336 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EBFC601C0BDF5F002BF336 /* UIBarButtonItem+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		C2B4009C1C0AFDBB00EE0DEE /* YLMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMessageTableViewController.m; sourceTree = "<group>"; };
 		C2B400A21C0AFDBB00EE0DEE /* YLProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProfileTableViewController.h; sourceTree = "<group>"; };
 		C2B400A31C0AFDBB00EE0DEE /* YLProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProfileTableViewController.m; sourceTree = "<group>"; };
+		C2EBFC5F1C0BDF5F002BF336 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		C2EBFC601C0BDF5F002BF336 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 			children = (
 				C2B400781C0AFDBB00EE0DEE /* UIView+YLExtension.h */,
 				C2B400791C0AFDBB00EE0DEE /* UIView+YLExtension.m */,
+				C2EBFC5F1C0BDF5F002BF336 /* UIBarButtonItem+Extension.h */,
+				C2EBFC601C0BDF5F002BF336 /* UIBarButtonItem+Extension.m */,
 			);
 			name = "Catogories（分类）";
 			path = Catogories;
@@ -531,6 +536,7 @@
 				C2B400A81C0AFDBB00EE0DEE /* YLHomeTableViewController.m in Sources */,
 				C2B400B11C0AFDBB00EE0DEE /* YLMessageTableViewController.m in Sources */,
 				C2B400AC1C0AFDBB00EE0DEE /* main.m in Sources */,
+				C2EBFC611C0BDF5F002BF336 /* UIBarButtonItem+Extension.m in Sources */,
 				C2B400B21C0AFDBB00EE0DEE /* YLProfileTableViewController.m in Sources */,
 				C2B400AB1C0AFDBB00EE0DEE /* AppDelegate.m in Sources */,
 			);

@@ -46,7 +46,7 @@
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"reusedCell"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld列",indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"第%ld列",indexPath.row + 1];
     cell.detailTextLabel.text = @"haha";
     return cell;
 }
