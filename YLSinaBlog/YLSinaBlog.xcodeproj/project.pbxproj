@@ -24,6 +24,7 @@
 		C2B400B01C0AFDBB00EE0DEE /* YLTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B400971C0AFDBB00EE0DEE /* YLTest2ViewController.xib */; };
 		C2B400B11C0AFDBB00EE0DEE /* YLMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4009C1C0AFDBB00EE0DEE /* YLMessageTableViewController.m */; };
 		C2B400B21C0AFDBB00EE0DEE /* YLProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400A31C0AFDBB00EE0DEE /* YLProfileTableViewController.m */; };
+		C2CA69971C0C3D930099E6A2 /* YLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CA69961C0C3D930099E6A2 /* YLSearchBar.m */; };
 		C2EBFC611C0BDF5F002BF336 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EBFC601C0BDF5F002BF336 /* UIBarButtonItem+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		C2B4009C1C0AFDBB00EE0DEE /* YLMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMessageTableViewController.m; sourceTree = "<group>"; };
 		C2B400A21C0AFDBB00EE0DEE /* YLProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProfileTableViewController.h; sourceTree = "<group>"; };
 		C2B400A31C0AFDBB00EE0DEE /* YLProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProfileTableViewController.m; sourceTree = "<group>"; };
+		C2CA69951C0C3D930099E6A2 /* YLSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchBar.h; sourceTree = "<group>"; };
+		C2CA69961C0C3D930099E6A2 /* YLSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSearchBar.m; sourceTree = "<group>"; };
 		C2EBFC5F1C0BDF5F002BF336 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		C2EBFC601C0BDF5F002BF336 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,6 +317,8 @@
 		C2B400981C0AFDBB00EE0DEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2CA69951C0C3D930099E6A2 /* YLSearchBar.h */,
+				C2CA69961C0C3D930099E6A2 /* YLSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				C2B4006F1C0AD27900EE0DEE /* YLMind.c in Sources */,
 				C2B400A61C0AFDBB00EE0DEE /* UIView+YLExtension.m in Sources */,
 				C2B400AA1C0AFDBB00EE0DEE /* YLNavigationViewController.m in Sources */,
+				C2CA69971C0C3D930099E6A2 /* YLSearchBar.m in Sources */,
 				C2B400A91C0AFDBB00EE0DEE /* YLMainTabbarController.m in Sources */,
 				C2B400AD1C0AFDBB00EE0DEE /* YLTest1ViewController.m in Sources */,
 				C2B400A81C0AFDBB00EE0DEE /* YLHomeTableViewController.m in Sources */,

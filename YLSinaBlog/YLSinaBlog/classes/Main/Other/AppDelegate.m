@@ -23,7 +23,6 @@
     self.window.rootViewController = [[YLMainTabbarController alloc] init];
     
     [self.window makeKeyAndVisible];
-    YLLOG(@"%@",  NSHomeDirectory());
     
     return YES;
 }

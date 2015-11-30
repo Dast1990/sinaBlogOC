@@ -19,6 +19,7 @@
 
     #import "UIView+YLExtension.h"
     #import "UIBarButtonItem+Extension.h"
+    #import "YLSearchBar.h"
 
 #endif
 

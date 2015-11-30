@@ -9,6 +9,7 @@
 #import "YLHomeTableViewController.h"
 
 
+
 @interface YLHomeTableViewController ()
 
 @end
@@ -21,8 +22,15 @@
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self selector:@selector(leftBtnDidClick) normalImgName:@"navigationbar_friendsearch" highlightedImgName:@"navigationbar_friendsearch_highlighted"];
     
-    
     self.navigationItem.rightBarButtonItem =  [UIBarButtonItem itemWithTarget:self selector:@selector(rightBtnDidClick) normalImgName:@"navigationbar_pop" highlightedImgName:@"navigationbar_pop_highlighted"];
+    
+//    test搜索框
+    YLSearchBar *searchBar = [YLSearchBar searchBar];
+    searchBar.x = 30;
+    searchBar.y = 100;
+    searchBar.width = 200;
+    searchBar.height = 50;
+    [self.view addSubview:searchBar];
 }
 
 - (void)leftBtnDidClick{
