@@ -20,6 +20,7 @@
     
 }
 
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     YLTest2ViewController *test2VC = [[YLTest2ViewController alloc] initWithNibName:@"YLTest2ViewController" bundle:nil];
     [self.navigationController pushViewController:test2VC animated:YES];

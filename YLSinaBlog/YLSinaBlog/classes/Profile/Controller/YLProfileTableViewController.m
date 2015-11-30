@@ -7,6 +7,7 @@
 //
 
 #import "YLProfileTableViewController.h"
+#import "YLTest1ViewController.h"
 
 @interface YLProfileTableViewController ()
 
@@ -17,11 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"查看更多" style:(UIBarButtonItemStyleDone) target:self action:@selector(rightBarButtonItemDidClick)];
+
+}
+
+- (void)rightBarButtonItemDidClick{
+    // initWithNibName 不能带 .xib,切记！
+    YLTest1ViewController *test1VC = [[YLTest1ViewController alloc] initWithNibName:@"YLTest1ViewController" bundle:nil];
+    [self.navigationController pushViewController:test1VC  animated:YES];
 }
 
 @end

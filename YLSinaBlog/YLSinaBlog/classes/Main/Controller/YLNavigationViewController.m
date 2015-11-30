@@ -13,9 +13,32 @@
 
 @implementation YLNavigationViewController
 
+//// 当 第一次 加载 这个类的时候调用（main函数方法之前调用），只会调用一次。使用#import "" 就会触发方法调用。
+//+ (void)load{
+//    YLLOG(@"%s", __func__);
+//}
+
+// 当 第一次 使用 该类或者该类的子类时调用（main方法执行之后调用），比 写在viewDidLoad方法中写 要好。
+/*
+ 2015-11-30 10:52:58.577 YLSinaBlog[41443:1943909] +[YLNavigationViewController initialize]
+ 2015-11-30 10:52:58.618 YLSinaBlog[41443:1943909] -[YLNavigationViewController viewDidLoad]
+ 2015-11-30 10:52:58.691 YLSinaBlog[41443:1943909] -[YLNavigationViewController viewDidLoad]
+ 2015-11-30 10:52:58.707 YLSinaBlog[41443:1943909] -[YLNavigationViewController viewDidLoad]
+ 2015-11-30 10:52:58.727 YLSinaBlog[41443:1943909] -[YLNavigationViewController viewDidLoad]
+ */
++ (void)initialize{
+    if (self == [YLNavigationViewController class]){ //如果子类没有实现该方法，那么子类调用这个方法时不满足if条件
+    UIBarButtonItem *btnItem = [UIBarButtonItem appearance];
+    [btnItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]
+                                      , NSFontAttributeName:[UIFont systemFontOfSize:13]} forState:(UIControlStateNormal)];
+    }
+    YLLOG(@"%s", __func__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    YLLOG(@"%s", __func__);
+
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{

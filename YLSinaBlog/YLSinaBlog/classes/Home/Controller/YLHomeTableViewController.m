@@ -7,7 +7,7 @@
 //
 
 #import "YLHomeTableViewController.h"
-#import "YLTest1ViewController.h"
+
 
 @interface YLHomeTableViewController ()
 
@@ -17,14 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"查看更多" style:(UIBarButtonItemStyleDone) target:self action:@selector(rightBarButtonItemDidClick)];
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self selector:@selector(leftBtnDidClick) normalImgName:@"navigationbar_friendsearch" highlightedImgName:@"navigationbar_friendsearch_highlighted"];
+    
+    
+    self.navigationItem.rightBarButtonItem =  [UIBarButtonItem itemWithTarget:self selector:@selector(rightBtnDidClick) normalImgName:@"navigationbar_pop" highlightedImgName:@"navigationbar_pop_highlighted"];
 }
 
-- (void)rightBarButtonItemDidClick{
-    // initWithNibName 不能带 .xib,切记！
-    YLTest1ViewController *test1VC = [[YLTest1ViewController alloc] initWithNibName:@"YLTest1ViewController" bundle:nil];
-    
-    [self.navigationController pushViewController:test1VC  animated:YES];
+- (void)leftBtnDidClick{
+    YLLOG(@"%s", __func__);
 }
+
+- (void)rightBtnDidClick{
+    YLLOG(@"%s", __func__);
+}
+
+
 
 @end
