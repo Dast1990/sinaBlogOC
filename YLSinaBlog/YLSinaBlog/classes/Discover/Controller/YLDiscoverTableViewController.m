@@ -25,9 +25,18 @@
     
 //    见天色
     UITextField *searchBar = [[UITextField alloc] init];
-    searchBar.frame = CGRectMake(0, 0, 100, 10);
+    searchBar.height = 40;
+    searchBar.width = 300;
     searchBar.background = [UIImage imageNamed:@"common_button_white_disable"];
-    searchBar.leftView = searchBar;
+    
+    UIImageView *searchImg = [[UIImageView alloc] init];
+    searchImg.image = [UIImage imageNamed:@"tabbar_discover"];
+    searchImg.height = 40;
+    searchImg.width = 40;
+    searchImg.contentMode = UIViewContentModeCenter;
+    searchImg.backgroundColor = [UIColor lightGrayColor];
+    
+    searchBar.leftView = searchImg;
     searchBar.leftViewMode = UITextFieldViewModeAlways;
     
     self.navigationItem.titleView = searchBar;
