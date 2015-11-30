@@ -16,6 +16,7 @@
 @implementation YLHomeTableViewController
 
 - (void)viewDidLoad {
+     YLLOG(@"%s",__func__);
     [super viewDidLoad];
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self selector:@selector(leftBtnDidClick) normalImgName:@"navigationbar_friendsearch" highlightedImgName:@"navigationbar_friendsearch_highlighted"];

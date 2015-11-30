@@ -27,23 +27,22 @@
  2015-11-30 10:52:58.727 YLSinaBlog[41443:1943909] -[YLNavigationViewController viewDidLoad]
  */
 + (void)initialize{
+    YLLOG(@"%s", __func__);
     if (self == [YLNavigationViewController class]){ //如果子类没有实现该方法，那么子类调用这个方法时不满足if条件
     UIBarButtonItem *btnItem = [UIBarButtonItem appearance];
     [btnItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]
                                       , NSFontAttributeName:[UIFont systemFontOfSize:13]} forState:(UIControlStateNormal)];
     }
-    YLLOG(@"%s", __func__);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    YLLOG(@"%s", __func__);
 
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
-    if(self.viewControllers.count > 0){
+    if(self.viewControllers.count > 0){ 
         //        注意：让被push的控制器hidesBottomBarWhenPushed，不是让导航控制器hidesBottomBarWhenPushed
         viewController.hidesBottomBarWhenPushed = YES;
         

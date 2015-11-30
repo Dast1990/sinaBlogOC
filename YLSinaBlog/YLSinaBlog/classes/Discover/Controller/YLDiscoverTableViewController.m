@@ -15,13 +15,22 @@
 @implementation YLDiscoverTableViewController
 
 - (void)viewDidLoad {
+     YLLOG(@"%s",__func__);
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+//    添加搜索框
+//    效果不好，搜索图标在中间，不好看。那就自定义吧
+//    UISearchBar *searchBar = [[UISearchBar alloc] init];
+//    self.navigationItem.titleView = searchBar;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    见天色
+    UITextField *searchBar = [[UITextField alloc] init];
+    searchBar.frame = CGRectMake(0, 0, 100, 10);
+    searchBar.background = [UIImage imageNamed:@"common_button_white_disable"];
+    searchBar.leftView = searchBar;
+    searchBar.leftViewMode = UITextFieldViewModeAlways;
+    
+    self.navigationItem.titleView = searchBar;
 }
 
 @end

@@ -20,6 +20,19 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"发消息" style:(UIBarButtonItemStyleDone) target:self action:@selector(sendMsg)];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor lightGrayColor];
+    YLLOG(@"%s", __func__);
+    
+}
+
+- (void)sendMsg{
+    YLLOG(@"%s", __func__);
 }
 
 #pragma mark -  UITableViewDelegate

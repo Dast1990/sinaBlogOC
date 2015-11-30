@@ -16,6 +16,7 @@
 @implementation YLProfileTableViewController
 
 - (void)viewDidLoad {
+     YLLOG(@"%s",__func__);
     [super viewDidLoad];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"查看更多" style:(UIBarButtonItemStyleDone) target:self action:@selector(rightBarButtonItemDidClick)];

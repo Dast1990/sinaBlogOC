@@ -22,7 +22,7 @@
     
     self.window.rootViewController = [[YLMainTabbarController alloc] init];
     
-    [self.window makeKeyAndVisible];
+    [self.window makeKeyAndVisible]; 
     
     return YES;
 }
