@@ -24,13 +24,20 @@
     
     self.navigationItem.rightBarButtonItem =  [UIBarButtonItem itemWithTarget:self selector:@selector(rightBtnDidClick) normalImgName:@"navigationbar_pop" highlightedImgName:@"navigationbar_pop_highlighted"];
     
-//    test搜索框
-    YLSearchBar *searchBar = [YLSearchBar searchBar];
-    searchBar.x = 30;
-    searchBar.y = 100;
-    searchBar.width = 200;
-    searchBar.height = 50;
-    [self.view addSubview:searchBar];
+//    设置导航栏中心视图
+    UIButton *titleViewByBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    titleViewByBtn.width = 250;
+    titleViewByBtn.height = 40;
+    [titleViewByBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    [titleViewByBtn setTitle:@"首页-文字可变" forState:(UIControlStateNormal)];
+    [titleViewByBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:(UIControlStateNormal)];
+//    titleViewByBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 100);
+//    titleViewByBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 150, 0, 0);
+    
+    self.navigationItem.titleView = titleViewByBtn;
+    
+    
+    
 }
 
 - (void)leftBtnDidClick{

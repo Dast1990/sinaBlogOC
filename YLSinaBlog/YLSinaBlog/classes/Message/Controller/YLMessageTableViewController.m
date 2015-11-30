@@ -16,7 +16,7 @@
 @implementation YLMessageTableViewController
 
 - (void)viewDidLoad {
-     YLLOG(@"%s",__func__);
+    YLLOG(@"%s",__func__);
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -26,12 +26,13 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    self.navigationItem.rightBarButtonItem.tintColor = [UIColor lightGrayColor];
+    //  会和全局的item 颜色设置产生冲突，导致第一次进去显示灰色，来回切换控制器就会显示全局设置的颜色！下面代码无论在这还是在viewWillAppear设置都是这样的
+    //    self.navigationItem.rightBarButtonItem.tintColor = [UIColor lightGrayColor];
     YLLOG(@"%s", __func__);
-    
 }
 
 - (void)sendMsg{
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor lightGrayColor];
     YLLOG(@"%s", __func__);
 }
 
