@@ -1,58 +1,111 @@
-//
-//  YLPullDownView.m
-//  YLSinaBlog
-//
-//  Created by LongMa on 15/12/1.
-//  Copyright © 2015年 LongMa. All rights reserved.
-//
+//YLPullDownView.m
 
 #import "YLPullDownView.h"
-#import "YLGrayViewOfPullDownView.h"
-
-@interface YLPullDownView ()
-
+@interface YLPullDownView()
+/**
+ *  将来用来显示具体内容的容器
+ */
+@property (nonatomic, weak) UIImageView *containerView;
 @end
 
 @implementation YLPullDownView
 
-- (instancetype)pullDownViewCreationWithContainerImgName:(NSString *)imgName
-                                    andContainerImgFrame:(CGRect)imgFrame
-                                          andContentView:(UIView *)contentView{
-    //   新建imgView：存放视图的容器
-    YLGrayViewOfPullDownView *imgView = [[YLGrayViewOfPullDownView alloc] initWithImage:[UIImage imageNamed:imgName]];
-    imgView.userInteractionEnabled = YES;
-    imgView.frame = imgFrame;
-     
-    //     设置透明遮罩
-    self.backgroundColor = [UIColor clearColor];
-    self.frame = [UIScreen mainScreen].bounds;
-    
-    //    添加显示内容
-    [imgView addSubview:contentView];
-    
-    //   注意： 用遮罩（不是window） 来包含imgView，遮罩作为下拉视图的根视图！这样比两个都加到窗口上要 更易封装。
-    [self addSubview:imgView];
+- (UIImageView *)containerView
+{
+    if (!_containerView) {
+        // 添加一个灰色图片控件
+        UIImageView *containerView = [[UIImageView alloc] init];
+        containerView.image = [UIImage imageNamed:@"popover_background"];
+        containerView.userInteractionEnabled = YES; // 开启交互
+        [self addSubview:containerView];
+        self.containerView = containerView;
+    }
+    return _containerView;
+}
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // 清除颜色
+        self.backgroundColor = [UIColor clearColor];
+    }
     return self;
 }
 
-+  (instancetype)pullDownViewCreationWithContainerImgName:(NSString *)imgName
-                                     andContainerImgFrame:(CGRect)imgFrame
-                                           andContentView:(UIView *)contentView{
-    return [[[self alloc] init] pullDownViewCreationWithContainerImgName:imgName andContainerImgFrame:imgFrame andContentView:contentView];
+
++ (instancetype)menu
+{
+    return [[self alloc] init];
 }
 
+- (void)setContent:(UIView *)content
+{
+    _content = content;
+    
+    // 调整内容的位置
+    content.x = 10;
+    content.y = 15;
+    
+    // 设置灰色的高度
+    self.containerView.height = CGRectGetMaxY(content.frame) + 11;
+    // 设置灰色的宽度
+    self.containerView.width = CGRectGetMaxX(content.frame) + 10;
+    
+    // 添加内容到灰色图片中
+    [self.containerView addSubview:content];
+}
 
-- (void)show{
+- (void)setContentController:(UIViewController *)contentController
+{
+    _contentController = contentController;
+    
+    self.content = contentController.view;
+}
+
+/**
+ *  显示
+ */
+- (void)showFrom:(UIView *)from
+{
+    // 1.获得最上面的窗口
     UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
+    
+    // 2.添加自己到窗口上
     [window addSubview:self];
+    
+    // 3.设置尺寸
+    self.frame = window.bounds;
+    
+    // 4.调整灰色图片的位置
+    // 默认情况下，frame是以父控件左上角为坐标原点
+    // 转换坐标系
+    CGRect newFrame = [from convertRect:from.bounds toView:window];
+    //    CGRect newFrame = [from.superview convertRect:from.frame toView:window];
+    self.containerView.centerX = CGRectGetMidX(newFrame);
+    self.containerView.y = CGRectGetMaxY(newFrame);
+    
+    // 通知外界，自己显示了
+    if ([self.delegate respondsToSelector:@selector(pulldownMenuDidShow:)]) {
+        [self.delegate pulldownMenuDidShow:self];
+    }
 }
 
-
-#pragma mark -  非本控件 tableView 的区域点击才可以响应这个方法。
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"%s",__func__);
+/**
+ *  销毁
+ */
+- (void)dismiss
+{
     [self removeFromSuperview];
     
+    // 通知外界，自己被销毁了
+    if ([self.delegate respondsToSelector:@selector(pulldownMenuDidDismiss:)]) {
+        [self.delegate pulldownMenuDidDismiss:self];
+    }
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self dismiss];
+}
 @end

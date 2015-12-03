@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C24DCEDA1C0D9E9200A5E7FD /* YLPullDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = C24DCED91C0D9E9200A5E7FD /* YLPullDownView.m */; };
-		C24DCEDE1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = C24DCEDD1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.m */; };
+		C24DCEE11C0FD21F00A5E7FD /* YLPullDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = C24DCEE01C0FD21F00A5E7FD /* YLPullDownView.m */; };
 		C2B400251C09CCED00EE0DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B400241C09CCED00EE0DEE /* Assets.xcassets */; };
 		C2B400331C09CCED00EE0DEE /* YLSinaBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400321C09CCED00EE0DEE /* YLSinaBlogTests.m */; };
 		C2B4003E1C09CCED00EE0DEE /* YLSinaBlogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B4003D1C09CCED00EE0DEE /* YLSinaBlogUITests.m */; };
@@ -48,10 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C24DCED81C0D9E9200A5E7FD /* YLPullDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPullDownView.h; sourceTree = "<group>"; };
-		C24DCED91C0D9E9200A5E7FD /* YLPullDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPullDownView.m; sourceTree = "<group>"; };
-		C24DCEDC1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGrayViewOfPullDownView.h; sourceTree = "<group>"; };
-		C24DCEDD1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGrayViewOfPullDownView.m; sourceTree = "<group>"; };
+		C24DCEDF1C0FD21F00A5E7FD /* YLPullDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPullDownView.h; sourceTree = "<group>"; };
+		C24DCEE01C0FD21F00A5E7FD /* YLPullDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPullDownView.m; sourceTree = "<group>"; };
 		C2B400151C09CCED00EE0DEE /* YLSinaBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSinaBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B400241C09CCED00EE0DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B400291C09CCED00EE0DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -263,10 +260,8 @@
 		C2B400851C0AFDBB00EE0DEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C24DCED81C0D9E9200A5E7FD /* YLPullDownView.h */,
-				C24DCED91C0D9E9200A5E7FD /* YLPullDownView.m */,
-				C24DCEDC1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.h */,
-				C24DCEDD1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.m */,
+				C24DCEDF1C0FD21F00A5E7FD /* YLPullDownView.h */,
+				C24DCEE01C0FD21F00A5E7FD /* YLPullDownView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -554,9 +549,8 @@
 				C2B400AC1C0AFDBB00EE0DEE /* main.m in Sources */,
 				C2EBFC611C0BDF5F002BF336 /* UIBarButtonItem+Extension.m in Sources */,
 				C2B400B21C0AFDBB00EE0DEE /* YLProfileTableViewController.m in Sources */,
-				C24DCEDE1C0DDF0700A5E7FD /* YLGrayViewOfPullDownView.m in Sources */,
 				C2B400AB1C0AFDBB00EE0DEE /* AppDelegate.m in Sources */,
-				C24DCEDA1C0D9E9200A5E7FD /* YLPullDownView.m in Sources */,
+				C24DCEE11C0FD21F00A5E7FD /* YLPullDownView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

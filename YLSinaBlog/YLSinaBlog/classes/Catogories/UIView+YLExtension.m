@@ -6,6 +6,24 @@
 
 @implementation UIView (YLExtension)
 
+- (void)setCenterX:(CGFloat)centerX{
+    CGPoint ylCenter = self.center;
+    ylCenter.x = centerX;
+}
+
+- (CGFloat)centerX{
+    return self.center.x;
+}
+
+- (void)setCenterY:(CGFloat)centerY{
+    CGPoint ylCenter = self.center;
+    ylCenter.y = centerY;
+}
+
+- (CGFloat)centerY{
+    return self.center.y;
+}
+
 - (void)setSize:(CGSize)size{
     CGRect frame = self.frame;
     frame.size = size;
