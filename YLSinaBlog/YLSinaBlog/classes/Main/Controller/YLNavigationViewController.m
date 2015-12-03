@@ -29,19 +29,23 @@
 + (void)initialize{
     YLLOG(@"%s", __func__);
     if (self == [YLNavigationViewController class]){ //如果子类没有实现该方法，那么子类调用这个方法时不满足if条件
+        [self setUpAppearance];
+    }
+}
+
++ (void)setUpAppearance{
     UIBarButtonItem *btnItem = [UIBarButtonItem appearance];
     [btnItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]
                                       , NSFontAttributeName:[UIFont systemFontOfSize:13]} forState:(UIControlStateNormal)];
-     
-        
-        /*
-         Note for iOS7: On iOS7 the tintColor property has moved to UIView, and now has special inherited behavior described in UIView.h.
-         This inherited behavior can conflict with the appearance proxy, and therefore tintColor is now disallowed with the appearance proxy.
-         所以想设置item的不可选状态的颜色，必须在全局对象这设置，不能私自在子控制器中设置，会冲突！
-         */
+    
+    
+    /*
+     Note for iOS7: On iOS7 the tintColor property has moved to UIView, and now has special inherited behavior described in UIView.h.
+     This inherited behavior can conflict with the appearance proxy, and therefore tintColor is now disallowed with the appearance proxy.
+     所以想设置item的不可选状态的颜色，必须在全局对象这设置，不能私自在子控制器中设置，会冲突！
+     */
     [btnItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor]
                                       , NSFontAttributeName:[UIFont systemFontOfSize:13]} forState:(UIControlStateDisabled)];
-    }
 }
 
 - (void)viewDidLoad {

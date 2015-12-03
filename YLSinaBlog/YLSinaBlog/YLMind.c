@@ -19,9 +19,11 @@ V5在pct中增加了YLLOG(…) debug下取代NSLog的代码
 V6.封装了UIBarButtonItem+Extension 分类文件，方便以后UIBarButtonItem类属性 的创建。
 V7.向首页增加了左右item，点击item的方法暂时未实现（找朋友和扫二维码);
   在导航控制器的 +initialize 方法中 设置导航栏全局样式.
-8.在消息界面为导航栏右item设置文字，设置为不可用，并使之显示为亮灰色。
-    切换界面回来（viewWillAppear重新设置了颜色为亮灰色）又变回了全局橘色，why？
-9.设置发现界面导航栏的搜索框
+V8.在消息界面为导航栏右item设置文字，设置为不可用，并使之显示为亮灰色。
+    切换界面回来（viewWillAppear重新设置了颜色为亮灰色）又变回了全局橘色，why?
+     A:因为appearance设置会与tinitColor会冲突。 不设置tinitColor而在全局对象设置不可用状态颜色就好了！
+V9.设置发现界面导航栏的搜索框
+
 
 
 */
