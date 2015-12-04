@@ -18,12 +18,10 @@
 @implementation YLHomeTableViewController
 
 - (void)viewDidLoad {
-    YLLOG(@"%s",__func__);
     [super viewDidLoad];
     
     [self setUpItems];
     [self setUpTitleView];
-    
 }
 
 

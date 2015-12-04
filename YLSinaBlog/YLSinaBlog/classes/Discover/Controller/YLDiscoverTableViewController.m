@@ -7,6 +7,7 @@
 //
 
 #import "YLDiscoverTableViewController.h"
+#import "YLTabBar.h"
 
 @interface YLDiscoverTableViewController ()
 
@@ -15,7 +16,6 @@
 @implementation YLDiscoverTableViewController
 
 - (void)viewDidLoad {
-    YLLOG(@"%s",__func__);
     [super viewDidLoad];
     
     YLSearchBar *searchBar = [YLSearchBar searchBar];
@@ -24,5 +24,7 @@
     //    添加搜索框
     self.navigationItem.titleView = searchBar;
 }
+
+
 
 @end

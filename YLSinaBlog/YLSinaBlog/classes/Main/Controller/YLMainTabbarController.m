@@ -22,6 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //    YLLOG(@"%@", self.tabBar);
+    //    //    kvc实现：自定义tabbar替换系统tabbar
+    //    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
+    //    YLLOG(@"%@", self.tabBar);
+    
     //    添加子控制器
     [self addChildController:[[YLHomeTableViewController alloc] init]
                    WithTitle:@"首页"
@@ -41,16 +47,18 @@
                selectedImage:@"tabbar_profile_highlighted"];
     
     YLLOG(@"%@", self.tabBar);
-//    kvc实现：自定义tabbar替换系统tabbar
+    //    kvc实现：自定义tabbar替换系统tabbar
     [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
     YLLOG(@"%@", self.tabBar);
+    
 }
-
 
 - (void)addChildController:(UIViewController *)childVC
                  WithTitle:(NSString *)title
            normalImageName:(NSString *)normalImg
              selectedImage:(NSString *)selectedImage{
+    
+    YLLOG(@"%@", self.tabBar);
     childVC.title = title;
     childVC.tabBarItem.image = [[UIImage imageNamed:normalImg]
                                 imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];

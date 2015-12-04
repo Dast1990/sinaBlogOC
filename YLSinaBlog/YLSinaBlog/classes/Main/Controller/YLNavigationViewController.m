@@ -51,7 +51,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
@@ -77,8 +77,8 @@
 }
 
 - (void)homeBtnDidClick{
-   NSArray *popsArr = [self popToRootViewControllerAnimated:YES];
-//    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
+    NSArray *popsArr = [self popToRootViewControllerAnimated:YES];
+    //    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
     YLLOG(@"%@", popsArr);
 }
 

@@ -6,6 +6,9 @@
 
 @interface UIView (YLExtension)
 
+/**
+ *  通过frame拿到的size，不是bounds
+ */
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, assign) CGFloat width;

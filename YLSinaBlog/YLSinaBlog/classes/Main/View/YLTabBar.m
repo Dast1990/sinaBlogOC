@@ -19,8 +19,9 @@
         [addBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button"] forState:(UIControlStateNormal)];
         [addBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button_highlighted"] forState:(UIControlStateHighlighted)];
         
-        self.addButton = addBtn;
+        self.backgroundImage = [UIImage imageNamed:@"tabbar_background"];
         [self addSubview:addBtn];
+        self.addButton = addBtn;
     }
     return self;
 }
@@ -32,14 +33,15 @@
 #pragma mark -  设置frame
 - (void)layoutSubviews{
     [super layoutSubviews];
-    //    设置加号按钮位置
+    
+    CGFloat tabBarWidth = self.width / 5;
+    //    设置加号按钮
     self.addButton.centerX = self.width * 0.5;
     self.addButton.centerY = self.height * 0.5;
-    YLLOG(@"tabbarWidth = %f, tabbarHeight = %f",self.width, self.height);
-    self.addButton.size = self.addButton.currentBackgroundImage.size;
+//    self.addButton.size = self.addButton.currentBackgroundImage.size;
+    self.addButton.size = CGSizeMake(tabBarWidth, self.height);
     
     CGFloat tabBarItemIndex = 0;
-    CGFloat tabBarWidth = [UIScreen mainScreen].bounds.size.width / 5;
     
     for (UIView *child in self.subviews) {
         Class class = NSClassFromString(@"UITabBarButton");
@@ -49,14 +51,13 @@
             if (tabBarItemIndex == 2) {
                 tabBarItemIndex++;
             }
-            //            设置items坐标
-            child.x = tabBarItemIndex * tabBarWidth;
+            //            item的宽度在这设置！
+            child.width = tabBarWidth;
+            child.x = tabBarItemIndex * tabBarWidth ;
             YLLOG(@"%f, %f",tabBarItemIndex, tabBarItemIndex * tabBarWidth);
             tabBarItemIndex++;
         }
     }
-    YLLOG(@"%@", self.addButton);
-    
 }
 
 
