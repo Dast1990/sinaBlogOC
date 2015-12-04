@@ -24,7 +24,6 @@
     [self setUpItems];
     [self setUpTitleView];
     
-    
 }
 
 
@@ -35,8 +34,8 @@
     self.titleViewByBtn.height = 40;
     [self.titleViewByBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
     [self.titleViewByBtn setTitle:@"首页-文字可变" forState:(UIControlStateNormal)];
-    [self.titleViewByBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:(UIControlStateNormal)];
-    [self.titleViewByBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:(UIControlStateSelected)];
+    [self.titleViewByBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:(UIControlStateSelected)];
+    [self.titleViewByBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:(UIControlStateNormal)];
     //  文字距离右边偏移距离为按钮中图片的长度
     self.titleViewByBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, self.titleViewByBtn.imageView.width);
 #warning 注意：
@@ -49,7 +48,7 @@
 }
 
 #pragma mark - 点击titleView按钮，创建下拉视图(待抽取)
-- (void)pullDownViewCreation{
+- (void)pullDownViewCreation{       	
     //    创建
     YLPullDownView *menu = [YLPullDownView menu];
     

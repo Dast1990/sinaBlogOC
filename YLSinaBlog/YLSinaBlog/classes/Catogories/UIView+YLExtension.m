@@ -9,6 +9,7 @@
 - (void)setCenterX:(CGFloat)centerX{
     CGPoint ylCenter = self.center;
     ylCenter.x = centerX;
+    self.center = ylCenter;
 }
 
 - (CGFloat)centerX{
@@ -18,6 +19,7 @@
 - (void)setCenterY:(CGFloat)centerY{
     CGPoint ylCenter = self.center;
     ylCenter.y = centerY;
+    self.center = ylCenter;
 }
 
 - (CGFloat)centerY{
