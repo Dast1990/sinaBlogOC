@@ -6,6 +6,7 @@
 //  Copyright © 2015年 LongMa. All rights reserved.
 
 #import "YLNavigationViewController.h"
+#import "YLTabBar.h"
 
 @interface YLNavigationViewController ()
 
@@ -76,7 +77,9 @@
 }
 
 - (void)homeBtnDidClick{
-    [self popToRootViewControllerAnimated:YES];
+   NSArray *popsArr = [self popToRootViewControllerAnimated:YES];
+//    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
+    YLLOG(@"%@", popsArr);
 }
 
 @end

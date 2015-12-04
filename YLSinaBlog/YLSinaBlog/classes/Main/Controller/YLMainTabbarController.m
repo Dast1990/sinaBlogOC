@@ -12,6 +12,7 @@
 #import "YLDiscoverTableViewController.h"
 #import "YLProfileTableViewController.h"
 #import "YLNavigationViewController.h"
+#import "YLTabBar.h"
 
 @interface YLMainTabbarController ()
 
@@ -39,23 +40,10 @@
              normalImageName:@"tabbar_profile"
                selectedImage:@"tabbar_profile_highlighted"];
     
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    #warning 注意：别忘记调用父类方法啊！不然打印不出来系统的tabbarItem的frame
-    [super viewWillAppear:animated];
-    
-    UIButton *addButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    [addButton setImage:[UIImage imageNamed:@"tabbar_compose_icon_add"] forState:(UIControlStateNormal)];
-    [addButton setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:(UIControlStateHighlighted)];
-    [addButton setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button"] forState:(UIControlStateNormal)];
-    [addButton setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button_highlighted"] forState:(UIControlStateHighlighted)];
-    addButton.size = addButton.currentBackgroundImage.size;
-    addButton.centerX = self.tabBar.width * 0.5;
-    addButton.centerY = self.tabBar.height * 0.5;
-    
-    [self.tabBar addSubview:addButton];
-    YLLOG(@"self.tabBar.subviews = %@", self.tabBar.subviews);
+    YLLOG(@"%@", self.tabBar);
+//    kvc实现：自定义tabbar替换系统tabbar
+    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
+    YLLOG(@"%@", self.tabBar);
 }
 
 

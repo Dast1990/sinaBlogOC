@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24BBA4B1C1129CD002B3420 /* YLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C24BBA4A1C1129CD002B3420 /* YLTabBar.m */; };
 		C24DCEE11C0FD21F00A5E7FD /* YLPullDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = C24DCEE01C0FD21F00A5E7FD /* YLPullDownView.m */; };
 		C2B400251C09CCED00EE0DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B400241C09CCED00EE0DEE /* Assets.xcassets */; };
 		C2B400331C09CCED00EE0DEE /* YLSinaBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B400321C09CCED00EE0DEE /* YLSinaBlogTests.m */; };
@@ -51,6 +52,8 @@
 		0E2A62A4C0026E9359EC34FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C936A344A9E2B0969BC8334 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		719F9667C94BEBA07F64FE6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C24BBA491C1129CD002B3420 /* YLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTabBar.h; sourceTree = "<group>"; };
+		C24BBA4A1C1129CD002B3420 /* YLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTabBar.m; sourceTree = "<group>"; };
 		C24DCEDF1C0FD21F00A5E7FD /* YLPullDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPullDownView.h; sourceTree = "<group>"; };
 		C24DCEE01C0FD21F00A5E7FD /* YLPullDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPullDownView.m; sourceTree = "<group>"; };
 		C2B400151C09CCED00EE0DEE /* YLSinaBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSinaBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,7 +214,6 @@
 				C2B400991C0AFDBB00EE0DEE /* Message */,
 				C2B4007A1C0AFDBB00EE0DEE /* Discover */,
 				C2B400A01C0AFDBB00EE0DEE /* Profile */,
-				C2B4009F1C0AFDBB00EE0DEE /* Other(第三方框架) */,
 				C2B400771C0AFDBB00EE0DEE /* Catogories（分类） */,
 			);
 			path = classes;
@@ -355,6 +357,8 @@
 			children = (
 				C2CA69951C0C3D930099E6A2 /* YLSearchBar.h */,
 				C2CA69961C0C3D930099E6A2 /* YLSearchBar.m */,
+				C24BBA491C1129CD002B3420 /* YLTabBar.h */,
+				C24BBA4A1C1129CD002B3420 /* YLTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -390,14 +394,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C2B4009F1C0AFDBB00EE0DEE /* Other(第三方框架) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Other(第三方框架)";
-			path = Other;
 			sourceTree = "<group>";
 		};
 		C2B400A01C0AFDBB00EE0DEE /* Profile */ = {
@@ -633,6 +629,7 @@
 				C2B400A61C0AFDBB00EE0DEE /* UIView+YLExtension.m in Sources */,
 				C2B400AA1C0AFDBB00EE0DEE /* YLNavigationViewController.m in Sources */,
 				C2CA69971C0C3D930099E6A2 /* YLSearchBar.m in Sources */,
+				C24BBA4B1C1129CD002B3420 /* YLTabBar.m in Sources */,
 				C2B400A91C0AFDBB00EE0DEE /* YLMainTabbarController.m in Sources */,
 				C2B400AD1C0AFDBB00EE0DEE /* YLTest1ViewController.m in Sources */,
 				C2B400A81C0AFDBB00EE0DEE /* YLHomeTableViewController.m in Sources */,
