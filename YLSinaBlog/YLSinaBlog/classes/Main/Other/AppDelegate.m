@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YLMainTabbarController.h"
+#import "YLOAuthViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = [[YLMainTabbarController alloc] init];
-    
+//    self.window.rootViewController = [[YLMainTabbarController alloc] init];
+    self.window.rootViewController = [[YLOAuthViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

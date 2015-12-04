@@ -14,7 +14,7 @@
 #import "YLNavigationViewController.h"
 #import "YLTabBar.h"
 
-@interface YLMainTabbarController ()
+@interface YLMainTabbarController ()<YLTabBarDelegate>
 
 @end
 
@@ -22,11 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //    YLLOG(@"%@", self.tabBar);
-    //    //    kvc实现：自定义tabbar替换系统tabbar
-    //    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
-    //    YLLOG(@"%@", self.tabBar);
     
     //    添加子控制器
     [self addChildController:[[YLHomeTableViewController alloc] init]
@@ -48,10 +43,22 @@
     
     YLLOG(@"%@", self.tabBar);
     //    kvc实现：自定义tabbar替换系统tabbar
-    [self setValue:[YLTabBar tabBar] forKeyPath:@"tabBar"];
-    YLLOG(@"%@", self.tabBar);
+    YLTabBar *ylTabbar = [YLTabBar tabBar];
+    [self setValue:ylTabbar forKeyPath:@"tabBar"];
+    YLLOG(@"%@", ylTabbar);
     
+    ylTabbar.myDelegate = self;
 }
+
+#pragma mark -  modal出发表说说控制器
+- (void)tabBarAddBtnDidClick:(YLTabBar *)tabBar{
+    UIViewController *releaseMicroBlogVC = [[UIViewController alloc] init];
+    releaseMicroBlogVC.view.backgroundColor = [UIColor brownColor];
+    [self presentViewController:releaseMicroBlogVC animated:YES completion:^{
+         YLLOG(@"%s",__func__);
+    }];
+}
+
 
 - (void)addChildController:(UIViewController *)childVC
                  WithTitle:(NSString *)title

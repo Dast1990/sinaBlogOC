@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface YLSearchBar : UITextField
+
+
+/**
+ *  类方法：创建对象
+ *
+ *  @return <#return value description#>
+ */
 + (instancetype)searchBar;
 @end
